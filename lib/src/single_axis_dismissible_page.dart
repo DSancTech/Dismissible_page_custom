@@ -232,7 +232,7 @@ class _SingleAxisDismissiblePageState extends State<SingleAxisDismissiblePage> w
 
   double get _radius => lerpDouble(widget.minRadius, widget.maxRadius, _dragValue)!;
 
-  double get _opacity => widget.startingOpacity - (_dragValue * 5.0).clamp(.0, 1.0);
+  double get _opacity => widget.startingOpacity - (_dragValue * 10.0).clamp(.0, 1.0);
 
   @override
   Widget build(BuildContext context) {
