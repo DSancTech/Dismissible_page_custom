@@ -165,7 +165,7 @@ class DismissiblePage extends StatelessWidget {
       onDragUpdate: onDragUpdate,
       reverseDuration: reverseDuration,
       behavior: behavior,
-      contentPadding: contentPadding,
+      contentPadding: isFullScreen ? EdgeInsets.zero : EdgeInsets.only(top: MediaQuery.of(context).padding.top),
       child: child,
     );
   }
